@@ -1,0 +1,24 @@
+{ "name"         : "amon-node",
+  "version"      : "0.0.1",
+  "description"  : "node.js module for Amon",
+  "homepage"     : "http://amon.cx",
+  "author"       : "Martin Rusev <martin@amon.cx>",
+  "repository" : {
+    "type" : "git",
+    "url"  : "http://github.com/martinrusev/amon-node.git"
+  },
+  "bugs" : {
+    "web"  : "http://github.com/martinrusev/amon-node/issues",
+    "mail" : "martin@amon.cx"
+  },
+  "main"         : "./lib/amon",
+  "engines"      : { "node" : ">=0.2.0" },
+  "scripts"      : { "test" : "test/amon-test.js" },
+  "dependencies" : {},
+  "licenses" : [
+    { "type" : "BSD",
+      "url"  : "http://github.com/martinrusev/amon-node"
+    }
+  ]
+}
+

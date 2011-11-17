@@ -1,12 +1,12 @@
-var Amon = require('./lib/amon').Amon;
+var amon = require('amon').Amon;
 
-Amon.log('node.js unset message')
-Amon.log('node.js debug message', 'debug')
-Amon.log('node.js warning message', 'warning')
-Amon.log('node.js info message', 'info')
+amon.log('node.js unset message')
+amon.log('node.js debug message', 'debug')
+amon.log('node.js warning message', 'warning')
+amon.log('node.js info message', 'info')
 
 process.addListener('uncaughtException', function(err) {
-	Amon.handle(err);
+	amon.handle(err);
 });
 
 //try {

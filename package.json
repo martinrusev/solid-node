@@ -1,5 +1,5 @@
 { "name"         : "amon",
-  "version"      : "0.2.1",
+  "version"      : "0.2.2",
   "description"  : "node.js module for Amon",
   "homepage"     : "http://amon.cx",
   "author"       : "Martin Rusev <martin@amon.cx>",

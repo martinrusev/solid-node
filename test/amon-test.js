@@ -24,8 +24,22 @@ exports.testExceptionHandler = function(test){
     var doc = Amon.exception_data_to_json(error);
     var json = JSON.parse(doc);
 
-    test.equal(json.message, "Exception here");
+    test.equal(json.message, exception_label);
     test.equal(json.exception_class, "Error: " + exception_label);
+    test.done();
+  }
+};
+
+exports.testExceptionHandlerWithoutLabel = function(test){
+  try {
+    throw new Error;
+  } 
+  catch(error) {
+    var doc = Amon.exception_data_to_json(error);
+    var json = JSON.parse(doc);
+
+    test.equal(json.message, "");
+    test.equal(json.exception_class, "Error");
     test.done();
   }
 };

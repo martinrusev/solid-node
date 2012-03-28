@@ -2,7 +2,7 @@ var amon = require('./lib/amon.js').Amon;
 amon.protocol = 'zeromq'
 amon.host = 'localhost'
 amon.port = 5464
-//amon.app_key = 'test'
+amon.app_key = 'rfDDiy8sDJWhynxQXV2DXzel2W3KR6P6pFsF5NdOKNI'
 
 image_dictionary={
   "Image": {

@@ -48,6 +48,3 @@ your project with <span class="code">node server.js</span>, add them to <span cl
 If you find a bug in the node client, you can use the the github issues page to report it: 
 [https://github.com/martinrusev/amon-node/issue](https://github.com/martinrusev/amon-node/issue)
 
-## Meta
-
-The Node.js client is hosted on [Github](https://github.com/martinrusev/amon-node)

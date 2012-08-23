@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/martinrusev/amon-node.png)](http://travis-ci.org/martinrusev/amon-node)
 ## Install
 
 You can install the node.js client with <span class='code'>npm install amon</span>

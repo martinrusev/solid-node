@@ -2,16 +2,15 @@
 // Install with npm install -g nodeunit
 // Run with nodeunit this file
 var assert = require('assert');
-var Amon = require('../lib/amon').Amon;
+var Solid = require('../lib/solid').Solid;
 
-
-exports.testAmonPort = function(test){
-  test.equal(Amon.port, 2464);
+exports.testSolidPort = function(test){
+  test.equal(Solid.port, 6464);
   test.done();
 };
 
-exports.testAmonHost = function(test){
-  test.equal(Amon.host, '127.0.0.1');
+exports.testSolidHost = function(test){
+  test.equal(Solid.host, '127.0.0.1');
   test.done();
 };
 
@@ -21,7 +20,7 @@ exports.testExceptionHandler = function(test){
     throw new Error(exception_label);
   } 
   catch(error) {
-    var doc = Amon.exception_data_to_json(error);
+    var doc = Solid.exception_data_to_json(error);
     var json = JSON.parse(doc);
 
     test.equal(json.message, exception_label);
@@ -35,7 +34,7 @@ exports.testExceptionHandlerWithoutLabel = function(test){
     throw new Error;
   } 
   catch(error) {
-    var doc = Amon.exception_data_to_json(error);
+    var doc = Solid.exception_data_to_json(error);
     var json = JSON.parse(doc);
 
     test.equal(json.message, "");

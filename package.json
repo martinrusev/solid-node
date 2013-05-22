@@ -1,32 +1,25 @@
 {
-    "name" : "amon",
-    "version"      : "0.5.0",
-    "description"  : "node.js module for Amon",
-    "homepage"     : "http://amon.cx",
-    "author"       : "Martin Rusev <martin@amon.cx>",
-    "repository" : {
-        "type" : "git",
-        "url"  : "http://github.com/martinrusev/amon-node.git"
-    },
-    "bugs" : {
-        "url"  : "http://github.com/martinrusev/amon-node/issues",
-        "mail" : "martin@amon.cx"
-    },
-    "main"         : "./lib/amon",
-    "engines"      : { "node" : ">=0.4.0" },
-    "scripts"      : { "test" : "test/amon-test.js" },
-    "dependencies" : {},
-    "licenses" : [
-    { "type" : "BSD",
-        "url"  : "http://github.com/martinrusev/amon-node"
-    }
-    ],
-        "contributors": [
-        {
-            "name": "Michael Heap",
-            "email": "m@michaelheap.com",
-            "web": "http://michaelheap.com" 
-        } 
-    ]
+	"name" : "solid",
+	"version"      : "1.0",
+	"description"  : "node.js module for Solid",
+	"homepage"     : "https://solidapp.io",
+	"author"       : "Martin Rusev <martin@solidapp.io>",
+	"repository" : {
+		"type" : "git",
+		"url"  : "http://github.com/martinrusev/solid-node.git"
+	},
+	"bugs" : {
+		"url"  : "http://github.com/martinrusev/solid-node/issues",
+		"mail" : "martin@solidapp.io"
+	},
+	"main"         : "./lib/amon",
+	"engines"      : { "node" : ">=0.4.0" },
+	"scripts"      : { "test" : "test/solid-test.js" },
+	"dependencies" : {},
+	"licenses" : [
+	{ "type" : "BSD",
+		"url"  : "http://github.com/martinrusev/solid-node"
+	}
+	],
 }
 

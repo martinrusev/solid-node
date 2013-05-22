@@ -1,6 +1,6 @@
 {
-	"name" : "solid",
-	"version"      : "1.0",
+	"name" : "solid-node",
+	"version"      : "1.0.0",
 	"description"  : "node.js module for Solid",
 	"homepage"     : "https://solidapp.io",
 	"author"       : "Martin Rusev <martin@solidapp.io>",
@@ -12,14 +12,14 @@
 		"url"  : "http://github.com/martinrusev/solid-node/issues",
 		"mail" : "martin@solidapp.io"
 	},
-	"main"         : "./lib/amon",
+	"main"         : "./lib/solid",
 	"engines"      : { "node" : ">=0.4.0" },
 	"scripts"      : { "test" : "test/solid-test.js" },
 	"dependencies" : {},
 	"licenses" : [
-	{ "type" : "BSD",
-		"url"  : "http://github.com/martinrusev/solid-node"
-	}
-	],
+		{ "type" : "BSD",
+			"url"  : "http://github.com/martinrusev/solid-node"
+		}
+	]
 }
 

@@ -1,18 +1,15 @@
-var amon = require('./lib/amon.js').Amon;
-amon.protocol = 'zeromq'
-amon.port = 5464
-//amon.app_key = 'p86f9cfgEuvl4HFGthR1TBAUE7Sfiz8NoDGTeNHh7Sw'
-
-amon.log('node.js log message', 'zeromq')
+var solid = require('./lib/solid.js').Solid;
+solid.port = 6464
+solid.secret_key = 'p86f9cfgEuvl4HFGthR1TBAUE7Sfiz8NoDGTeNHh7Sw'
 
 process.addListener('uncaughtException', function(err) {
-	amon.handle(err);
+	solid.handle(err);
 });
 
 try {
   throw new Error("Test Error");
 } catch(error) {
-  amon.handle(error);
+  solid.handle(error);
 }
 
 

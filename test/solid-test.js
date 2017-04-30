@@ -4,17 +4,17 @@
 var assert = require('assert');
 var Solid = require('../lib/solid').Solid;
 
-exports.testSolidPort = function(test){
+exports.testSolidPort = test => {
   test.equal(Solid.port, 6464);
   test.done();
 };
 
-exports.testSolidHost = function(test){
+exports.testSolidHost = test => {
   test.equal(Solid.host, '127.0.0.1');
   test.done();
 };
 
-exports.testExceptionHandler = function(test){
+exports.testExceptionHandler = test => {
   var exception_label = "Exception here";
   try {
     throw new Error(exception_label);
@@ -28,7 +28,7 @@ exports.testExceptionHandler = function(test){
   }
 };
 
-exports.testExceptionHandlerWithoutLabel = function(test){
+exports.testExceptionHandlerWithoutLabel = test => {
   try {
     throw new Error;
   } 
